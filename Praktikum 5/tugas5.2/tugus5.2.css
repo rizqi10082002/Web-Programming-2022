@@ -1,0 +1,46 @@
+.box1{
+    border: black 1px solid;
+    background-color: rgb(41, 199, 125);
+    width: 83em;
+    height: 150px;
+    position: relative;
+}
+.container{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box2{
+    width: 13em;
+    border: black 1px solid;
+    background-color: yellow;
+    height: 220px;
+    position: relative;
+    top: 30px;
+}
+.box3{
+    border: black 1px solid;
+    background-color: orangered;
+    height: 220px;
+    width: 68em;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+.box4{
+    border: 1px black solid;
+    width: 13em;
+    height: 193px;
+    position: relative;
+    top: 55px;
+    background-color: yellow;
+}
+.box5{
+    height: 193px;
+    width: 68em;
+    position: relative;
+    left: 30px;
+    border: solid 1px black;
+    top: 55px;
+    background-color: rgb(139, 189, 206);
+}

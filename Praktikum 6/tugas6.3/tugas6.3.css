@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+body{
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+    margin: 10px;
+}
+.main{
+    display: flex;
+    flex: 1;
+    margin: 10px 0;
+}
+.main>aside{
+    flex: 0 0 20vw;
+    order: 1;
+    background: rgba(0, 0, 255, 0.63);
+    line-height: 500px;
+    margin-right: 10px;
+}
+.main>article{
+    flex: 1;
+    order: 2;
+    background: palevioletred;
+}
+header,footer{
+    background: aquamarine;
+    padding: 15px 50px;
+
+}
+img{
+    width: 300px;
+}
+p{
+    margin-top: 240px;
+}

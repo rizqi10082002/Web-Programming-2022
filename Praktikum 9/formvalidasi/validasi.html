@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Validation</title>
+</head>
+<body>
+
+   <label for="username">Nama Pelanggan:</label>
+   <input required maxlength="30" type="text" id="username" placeholder="masukkan username">
+   <br>
+   <label for="email">Email:</label>
+   <input required type="email" id="email" placeholder="masukkan email">
+   <br>
+   <label for="jam">Jam Keberangkatan:</label>
+   <input required type="time" id="time">
+   <br>
+   <label for="tujuan">Tujuan Keberangkatan:</label>
+   <input required type="text" id="tujuan" placeholder="kota tujuan">
+   <br>
+   <label for="tiket">Jumlah Tiket:</label>
+   <input required type="number" id="tiket" min="1" max="10">
+   <br>
+   <button onclick="validationForm()">Submit</button>
+
+   <div id="hasil"></div>
+
+   <script>
+      function validationForm() {
+         let username = document.getElementById('username').value;
+         let email = document.getElementById('email').value;
+         let time = document.getElementById('time').value;
+         let tujuan = document.getElementById('tujuan').value;
+         let tiket = document.getElementById('tiket').value;
+      
+         if (username == 'fauzan' && email == 'fauzan.ardsh@gmail.com' && time == '08:00' && tujuan == 'depok' && tiket == 1){
+            document.getElementById('hasil').innerHTML = 'nama' + username + '<br>email' + email + '<br>time' + time + '<br>tujuan' + tujuan + '<br>tiket' + tiket;
+         }
+         else{
+            alert('tidak valid');
+         }
+      }
+      
+   </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Mata Uang</title>
+</head>
+<body>
+    <input id="nilaiawal" type="number" value="" placeholder="Masukkan Nilai" onchange="konfersi()">
+
+    <select id="pilihkurs" onchange="konfersi()">
+        <option value="US">US Dollar</option>
+        <option value="Singapore">Dollar Singapore</option>
+        <option value="Ringgit">Ringgit Malaysia</option>
+        <option value="Yen">Yen Jepang</option>
+        <option value="Euro">Euro</option>
+        <option value="Riyal">Riyal Saudi</option>
+    </select>
+
+    <input  id="rp" type="number" value="0" placeholder="hasil">
+
+<script>
+    function konfersi(){
+        let nilaiAwal = document.getElementById("nilaiawal").value;
+        let kurs = document.getElementById("pilihkurs").value;
+        let hasil;
+
+            if (kurs == 'US') {
+                hasil = nilaiAwal * 9915;
+            } else if (kurs == 'Singapure') {
+                hasil = nilaiAwal * 13472;
+            } else if (kurs == 'Ringgit') {
+                hasil = nilaiAwal * 874;
+            } else if (kurs == 'Yen') {
+                hasil = nilaiAwal * 120;
+            } else if (kurs == 'Euro') {
+                hasil = nilaiAwal * 15888;
+            } else if (kurs == 'Riyal') {
+                hasil = nilaiAwal * 3592;
+            } else {
+                hasil = 0;
+        }
+        document.getElementById('rp').value = hasil;
+    }
+    </script>
+</body>
+</html>

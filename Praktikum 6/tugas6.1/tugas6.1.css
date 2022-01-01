@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+.img{
+    border: black 1px solid;
+    margin: auto;
+}
+.img1{
+    width: 440px;
+    margin-bottom: 10px;
+}
+.img2{
+    width: 440px;
+    margin-bottom: 10px;
+}
+.img3{
+   width:  440px;
+   margin-bottom: 10px;
+}
+.img4{
+    width: 258px;
+}
+.img5{
+    width: 258px;
+}
+.img6{
+    width: 258px;
+}
+.img7{
+    width: 258px;
+}
+.img8{
+    width: 258px;
+}

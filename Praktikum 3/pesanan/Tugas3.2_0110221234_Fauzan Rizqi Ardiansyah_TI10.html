@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: thistle;">
+    <header style="background-color: darkgray;">
+        <p align="center">A Web Page</p>
+        <ul style="display: flex; list-style: none; align-items: center; padding-left: 3px;">
+            <li><img src="img/pngegg.png" alt="" style="width: 20px; margin-right: 6px;"></li>
+            <li><img src="img/kisspng-arrow-logo-arrow-transparent-5a7532e4c37a89.3024672015176301808007.png" alt="" style="width: 20px; margin-right: 10px;"></li>
+            <li><img src="img/pngwing.com (1).png" alt="" style="width: 20px; margin-right: 10px;"></li>
+            <li><img src="img/pngegg (1).png" alt="" style="width: 20px; margin-right: 10px; "></li>
+            <li><input type="text" style="width: 1180px;" placeholder="http://"></li>
+            <li><img src="img/pngegg (2).png" alt="" style="width: 20px; margin-left: 10px;"></li>
+        </ul>
+    </header>
+    <section style="border: 3px black solid; display: flex;">
+        <ul style="list-style: none; display: flex; justify-content: space-between; align-content: center;">
+            <li style="margin-right: 150px;"><p>Home |</p></li>
+            <li style="margin-right: 150px;"><p>Generate Link |</p></li>
+            <li style="margin-right: 150px;"><p>Transaction History |</p></li>
+            <li style="margin-right: 150px;"><p>Policy |</p></li>
+            <li><P>Logout</P></li>
+        </ul>
+    </section>
+    <table>
+        <tr>
+            <td rowspan="10">
+                <img src="img/6007d67db05bc.jpg" alt="" style="width: 200px;">
+                <br>
+               <input id="browse" type="file" style="width: 0px; margin-bottom: 190px;">
+               <button onclick="browse.click()">
+                Upload Picture 
+               </button>
+            </td>
+            <td colspan="2">Title Here :</td>
+            <td> 
+            </td>
+            <td><input type="text" placeholder="MacBook Air $800" style="width: 700px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Description :</td>
+            <td></td>
+            <td><textarea name="description" id="description" cols="30" rows="8" placeholder="Year: 2009 &#10; &#10; &#10;Model: &#10; &#10; &#10;Condition: Mint"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">Account Number :</td>
+            <td></td>
+            <td><input type="text" placeholder="123-456-789-0" style="width: 700px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Bank</td>
+            <td></td>
+            <td><input type="text" list="Bank" name="Bank" placeholder="HSBC">
+                <datalist id="Bank">
+                <option value="Mandiri"></option>
+                <option value="BNI"></option>
+                <option value="BTN"></option>
+                <option value="BRI"></option>
+            </datalist></td>
+        </tr>
+        <tr>
+            <td colspan="2">Account Holder :</td>
+            <td></td>
+            <td><input type="text" placeholder="Name Here" style="width: 600px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Transaction :</td>
+            <td></td>
+            <td><input type="number" style="width: 20px;" placeholder="1"><br>
+            * if the transaction is for 3 person, choose 3 from the drop-down list
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td><input type="checkbox" checked>send to mobile phone <br><input type="checkbox" checked>send to email</td>
+        </tr>
+        <tr>
+            <td colspan="2">Send To Mobile Phone :</td>
+            <td></td>
+            <td><input type="text" placeholder="1234567890, 1234567891" style="width: 600px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Send To Email :</td>
+            <td></td>
+            <td><input type="email" placeholder="fauzan.ardsh@gmail.com" style="width: 600px;">
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+                <td><button style="background-color: green;color: white; margin-top: 30px;"> Generate Nabr Link</button></td>
+            </tr>
+    </table>
+</body>
+</html>

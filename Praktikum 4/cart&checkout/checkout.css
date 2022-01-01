@@ -1,0 +1,72 @@
+.head{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: darkgray; 
+    border: 1px black solid;
+}
+.luar{
+    display: flex; 
+    align-items: center;
+    list-style: none;
+}
+.list{
+    margin-right: 30px;
+    list-style: square;
+}
+.dalem{
+    margin-right: 820px;
+}
+.dlm{
+    margin-left: 5px;
+}
+.gambar{
+    width: 15px;
+}
+.gambar01{
+    width: 15px;
+}
+.atas{
+    display: flex;
+}
+.kl{
+    width: 80%;
+}
+.gambar02{
+    width: 40px;
+}
+.kd{
+    width: 20px;
+}
+.gambar03{
+    width: 20px;
+}
+.kl02{
+    background-color: darkgrey;
+}
+.kaki{
+    margin-top: 199px; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: darkgray; 
+    border: 1px black solid;
+}
+.list01{
+    display: flex; 
+    list-style: none;
+}
+.dlm01{
+    margin-right: 40px;
+}
+.gambar04{
+    width: 10px;
+}
+.gambar05{
+    width: 10px;
+}
+.gambar06{
+    width: 10px;
+}
+.dlm02{
+    margin-right: 680px;
+}
