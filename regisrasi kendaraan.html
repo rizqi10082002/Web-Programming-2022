@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIPAK - STTNF</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light bg-dark">
+    <!-- Left navbar links -->
+    <div>
+      <img src="dist/img/COBA.png" class="img-size-50" alt="...">
+      <div>
+        <h5 class="card-title">SIPAK-STTNF</h5>
+      </div>
+    </div>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      
+
+      <!-- Messages Dropdown Menu -->
+      <a href="index.html" class="mr-2 text-white">Home |</a>
+      
+      <a href="data area parkir.html" class="mr-2 text-white"> Berita |</a>
+
+      <a href="data gedung.html" class="mr-2 text-white">Fasilitas Parkir  |</a>
+
+      <a href="login.html" class="mr-2 text-white">Login</a>
+
+            <!-- Message End -->
+          
+            <!-- Message Start -->
+            
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <h1 class="m-0 text-center">Registrasi Kendaraan Anda</h1> 
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">         
+<form class="border border-dark">
+  <div class="form-group row m-3">
+    <label class="col-4">Status</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="Mahasiswa" required="required"> 
+        <label for="radio_0" class="custom-control-label">Mahasiswa</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="Dosen" required="required"> 
+        <label for="radio_1" class="custom-control-label">Dosen</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row m-3">
+    <label for="text" class="col-4 col-form-label">NIM/NIDN</label> 
+    <div class="col-8">
+      <input id="text" name="text" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row m-3">
+    <label for="text1" class="col-4 col-form-label">Nama Lengkap</label> 
+    <div class="col-8">
+      <input id="text1" name="text1" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row m-3">
+    <label for="select" class="col-4 col-form-label">Prodi</label> 
+    <div class="col-8">
+      <select id="select" name="select" class="custom-select" required="required">
+        <option value="Informatika">Teknik Informatika</option>
+        <option value="Informasi">Sistem Informasi</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row m-3">
+    <label class="col-4">Jenis Kendaraan</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="radio1" id="radio1_0" type="radio" class="custom-control-input" value="Motor" required="required"> 
+        <label for="radio1_0" class="custom-control-label">Motor</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="radio1" id="radio1_1" type="radio" class="custom-control-input" value="Mobil" required="required"> 
+        <label for="radio1_1" class="custom-control-label">Mobil</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row m-3">
+    <label for="text2" class="col-4 col-form-label">NoPol</label> 
+    <div class="col-8">
+      <input id="text2" name="text2" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row m-3">
+    <label for="text3" class="col-4 col-form-label">Merk</label> 
+    <div class="col-8">
+      <input id="text3" name="text3" type="text" class="form-control" required="required">
+    </div>
+  </div> 
+  <div class="form-group row m-3">
+    <label for="text1" class="col-4 col-form-label">Upload STNK</label> 
+    <div class="col-6">
+      <input id="text1" name="text1" type="text" class="form-control">
+    </div>
+    <div class="col-2">
+      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+  </div> 
+  <div class="form-group row m-3">
+    <div class="offset-6 col-12">
+      <button name="submit" type="submit" class="btn btn-primary"><a href="#" style="color: beige;" onclick="RegisterKendaraan()"> Daftar </a></button>
+    </div>
+  </div>
+</form>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer mt-4 bg-info">
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2022 Develop By SaurusProgram - STTNF </strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script src="dist/js/login.js"></script>
+</body>
+</html>

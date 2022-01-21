@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIPAK - STTNF</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light bg-dark">
+    <!-- Left navbar links -->
+    <div>
+      <img src="dist/img/COBA.png" class="img-size-50" alt="...">
+      <div>
+        <h5 class="card-title">SIPAK-STTNF</h5>
+      </div>
+    </div>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      
+
+      <!-- Messages Dropdown Menu -->
+      <a href="index.html" class="mr-2 text-white">Home |</a>
+      
+      <a href="data area parkir.html" class="mr-2 text-white"> Berita |</a>
+
+      <a href="data parkir.html" class="mr-2 text-white">Registrasi Kegiatan  |</a>
+
+      <a href="login.html" class="mr-2 text-white">Login</a>
+
+            <!-- Message End -->
+          
+            <!-- Message Start -->
+            
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <h1 class="m-0 text-center">Registrasi User</h1> 
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">         
+<form class="border border-dark">
+  <div class="form-group row mr-3 ml-3 mt-3 mb-3">
+    <label for="text" class="col-4 col-form-label">Cari Sivitas Akademi</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-search"></i>
+          </div>
+        </div> 
+        <input id="text" name="text" placeholder="search" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row mr-3 ml-3 mt-3 mb-3">
+    <label for="text1" class="col-4 col-form-label">Nama Lengkap :</label> 
+     <label for="" class="col-8 col-form-label">Nama Mahasiswa / Dosen</label> 
+  </div>
+  <div class="form-group row mr-3 ml-3 mt-3 mb-3">
+    <label for="text2" class="col-4 col-form-label">Asal Prodi :</label> 
+    <label for="" class="col-8 col-form-label">Asal Prodi</label> 
+  </div>
+  <div class="form-group row mr-3 ml-3 mt-3 mb-3">
+    <label for="text3" class="col-4 col-form-label">Username :</label> 
+    <div class="col-8">
+      <input id="text3" name="text3" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row mr-3 ml-3 mt-3 mb-3">
+    <label for="text4" class="col-4 col-form-label">Password :</label> 
+    <div class="col-8">
+      <input id="text4" name="text4" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row mr-3 ml-3 mt-3 mb-3">
+    <label for="text5" class="col-4 col-form-label">Cek Password :</label> 
+    <div class="col-8">
+      <input id="text5" name="text5" type="text" class="form-control" required="required">
+    </div>
+  </div> 
+  <div class="form-group row mr-3 ml-3 mt-3 mb-3">
+    <div class="offset-6 col-12">
+      <button name="submit" type="submit" class="btn btn-primary"><a href="#" style="color: beige;" onclick="RegisterUser()"> Daftar </a></button>
+    </div>
+  </div>
+</form>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer mt-4 bg-info">
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2022 Develop By SaurusProgram - STTNF </strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script src="dist/js/login.js"></script>
+</body>
+</html>
